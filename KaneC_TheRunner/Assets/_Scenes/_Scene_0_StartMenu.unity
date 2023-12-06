@@ -3440,7 +3440,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 50}
+  m_SizeDelta: {x: 1750, y: 750}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &974211104
 MonoBehaviour:
@@ -3462,7 +3462,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Created by: Craig Kane'
+  m_text: "Created by: \t\t\tCraig Kane\n\nMovement Tutorials: \tDave / GameDevelopment\n\t\t\t\t\thttps://www.youtube.com/@davegamedevelopment\n\nMenu
+    Music: \t\t\tLupus Nocte - Milky Way Express\n\nIn-Game Music: \t\tMind As Universe
+    (OST) - We Are Magonia\n\t\t\t\t\tDive Into The Void (OST) - We Are Magonia\n\t\t\t\t\tSon
+    of a Microchip (OST) - Dan Terminus\n\t\t\t\t\tCartilage (OST) - Dan Terminus"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e086e3d52aa1ea41925f43a8d3f3906, type: 2}
   m_sharedMaterial: {fileID: 961034939510512455, guid: 6e086e3d52aa1ea41925f43a8d3f3906, type: 2}
@@ -3496,7 +3499,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 33
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
