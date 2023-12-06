@@ -55,6 +55,8 @@ public class Dashing : MonoBehaviour
         if (Input.GetKeyDown(dashKey) && numberOfDashes > 0)
         {
             Dash();
+            pm.audioSource.clip = pm.dashingSound;
+            pm.audioSource.PlayOneShot(pm.audioSource.clip);
             numberOfDashes--;
         }
 

@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip landingSound;
     public AudioClip dashingSound;
     public AudioSource audioSource;
+    public AudioClip powerPickup;
 
     [Header("Movement")]
     public float walkSpeed;
@@ -362,7 +363,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (rb.velocity.y > 0)
             {
-                rb.AddForce(Vector3.down * 160f, ForceMode.Force);
+                rb.AddForce(Vector3.down * 200f, ForceMode.Force);
             }
         }
         else if (grounded)
@@ -428,7 +429,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool OnSlope()
     {
-        if (Physics.Raycast(transform.position, Vector3.down, out slopeHit, playerHeight * 0.5f + 0.5f))
+        if (Physics.Raycast(transform.position, Vector3.down, out slopeHit, playerHeight * 0.5f + 1.5f))
         {
             float angle = Vector3.Angle(Vector3.up, slopeHit.normal);
             return angle < maxSlopeAngle && angle != 0;
@@ -444,6 +445,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void CollectPowerup(LayerMask powerup)
     {
+        audioSource.clip = powerPickup;
+        audioSource.PlayOneShot(audioSource.clip);
+
         if (powerup == dashPowerup)
         {
             GetComponent<Dashing>().CollectPowerup();

@@ -29794,6 +29794,14 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 1510628401}
+    - target: {fileID: 4908389687477891685, guid: ecb3f0282d81612448744f8bc45b3fcc, type: 3}
+      propertyPath: powerPickup
+      value: 
+      objectReference: {fileID: 8300000, guid: 79076faf397b43e449056eee551c1345, type: 3}
+    - target: {fileID: 4908389687477891685, guid: ecb3f0282d81612448744f8bc45b3fcc, type: 3}
+      propertyPath: dashingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: aaf19fc884184d1438ef1ac78080d998, type: 3}
     - target: {fileID: 4908389687477891687, guid: ecb3f0282d81612448744f8bc45b3fcc, type: 3}
       propertyPath: m_RootOrder
       value: 4
